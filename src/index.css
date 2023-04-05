@@ -1,0 +1,66 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #111827;
+}
+
+.game-card {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  background-color: #1f2937;
+
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.bg-sec {
+  background-color: #1f2937;
+
+}
+
+.min-vh-71 {
+  min-height: 71vh;
+}
+
+.loading {
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.centered {
+    position: fixed;
+    width: 40%;
+    text-align: center;
+    top: 25%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, 0);
+}
+
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url(assets/layered-waves-haikei.svg);
+}
+
+.bg-footer {
+    background-color: #273446;
+}
