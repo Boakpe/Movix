@@ -1,6 +1,7 @@
 import { useState } from "react";
 import useFetch from "../hooks/useFetch";
 import Card from "../components/Card";
+import Loading from "../components/Loading";
 
 const AddMovie = () => {
   const [query, setQuery] = useState("");
@@ -13,8 +14,9 @@ const AddMovie = () => {
   };
 
   return (
-    <div className="container mt-2 min-vh-71 d-flex justify-content-center align-items-center flex-column">
-      <form className="d-flex" onSubmit={handleSubmit}>
+    <div className="container mt-2 min-vh-71">
+      <h1 className="text-white">Add movies</h1>
+      <form className="d-flex mb-4" onSubmit={handleSubmit} data-bs-theme="dark">
         <input
           type="text"
           name="add-movie"
@@ -27,7 +29,7 @@ const AddMovie = () => {
         </button>
       </form>
       {loading ? (
-        <div>Loading...</div>
+        <Loading/>
       ) : (
         <div className="row">
           {movies &&
