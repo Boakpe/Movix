@@ -1,9 +1,10 @@
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import "./Loading.css";
 
 const Loading = () => {
   return (
-    <div className="text-center text-white loading">
-      <AiOutlineLoading3Quarters />
+    <div className="loading-container">
+      <AiOutlineLoading3Quarters className="loading-icon" />;
     </div>
   );
 };
