@@ -3,7 +3,10 @@ import useFetch from "../hooks/useFetch";
 import VideoJS from "../components/VideoJS";
 import videojs from "video.js";
 import { useEffect, useState, useRef } from "react";
-import { IoReturnUpBackOutline, IoPlayCircleOutline } from "react-icons/io5";
+import {
+  IoReturnUpBackOutline,
+  IoPlayCircleOutline
+} from "react-icons/io5";
 
 import Loading from "../components/Loading";
 const Movie = () => {
