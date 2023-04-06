@@ -9,7 +9,7 @@ Para instalar e executar a aplicação localmente, siga os seguintes passos:
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-username/movix.git
+git clone https://github.com/Boakpe/Movix.git
 ```
 
 2. Instale as dependências:
@@ -35,9 +35,9 @@ npm start
 
 Após executar a aplicação, acesse http://localhost:3001 em seu navegador para visualizar a página principal.
 
-Na página principal, é possível buscar por filmes utilizando o campo de busca localizado na parte superior da página. Além disso, também é possível navegar pelos filmes em destaque, pelos filmes mais populares e pelos filmes mais recentes utilizando as seções disponíveis na página.
+Na página principal, é possível buscar por filmes adicionados utilizando o campo de busca localizado na parte superior da página.
 
-Ao clicar em um filme, é possível visualizar informações sobre o mesmo, como título, descrição e nota. Além disso, também é possível assistir ao filme utilizando o player de vídeo disponível na página.
+Ao clicar em um filme, é possível visualizar informações sobre o mesmo, como título e descrição. Além disso, também é possível assistir ao filme utilizando o player de vídeo disponível na página.
 
 ## Tecnologias utilizadas
 
