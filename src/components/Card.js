@@ -30,6 +30,15 @@ const Card = ({ id, title, description, image, api_id }) => {
           <p className="card-text text-secondary text-truncate">
             {description}
           </p>
+          
+          { !was_added() && movies  &&
+            <button
+            onClick={handleAddMovie}
+            className="btn btn-outline-success mb-2 mt-auto align-self-start"
+          >
+            {isLoading ? "Loading..." : "Add Movie"}
+          </button>
+          }
           <Link
             to={"/movies/" + id}
             state={{ from: api_id }}
@@ -37,15 +46,6 @@ const Card = ({ id, title, description, image, api_id }) => {
           >
             More info
           </Link>
-          { !was_added() && movies  &&
-            <button
-            onClick={handleAddMovie}
-            className="btn btn-outline-success mt-2 align-self-start"
-          >
-            {isLoading ? "Loading..." : "Add Movie"}
-          </button>
-          }
-          
           {error && <p className="text-danger mt-2">{error.message}</p>}
         </div>
       </div>
